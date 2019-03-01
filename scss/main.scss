@@ -1,0 +1,14 @@
+$main-color: rgb(68, 75, 82) ;
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $main-color;
+    color: #fff;
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
