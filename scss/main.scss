@@ -1,7 +1,7 @@
 $main-color: rgb(93, 99, 104) ;
 $secondary-color: rgb(245, 56, 56);
 $show-home-image: true;
-$home-image: url(../dist/img/tesla.jpg);
+$background-image: url(https://images.unsplash.com/photo-1439436556258-1f7fab1bfd4f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
 $background-opacity: 0.9;
 
 @mixin easeout {
@@ -11,7 +11,9 @@ $background-opacity: 0.9;
 @mixin background {
     @if $show-home-image {
         &#bg-img{
-            background: $home-image;
+            background: $background-image;
+            background-attachment: fixed;
+            background-size: cover;
         }
     }
 }
@@ -20,7 +22,7 @@ $background-opacity: 0.9;
 }
 
 body{
-    @include background();
+    @include background;
     background-color: $main-color;
     color: #fff;
     height: 100%;
