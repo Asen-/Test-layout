@@ -14,4 +14,10 @@
         background: #fff;
         
     }
+
+    //rotate into x with menu lines
+
+    &.close{
+        transform: rotate(180deg);
+    }
 }
