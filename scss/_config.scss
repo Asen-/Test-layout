@@ -1,4 +1,4 @@
-$main-color: rgb(93, 99, 104) ;
+$main-color: #444 ;
 $secondary-color: rgb(245, 56, 56);
 $show-home-image: true;
 $background-image: url(https://images.unsplash.com/photo-1439436556258-1f7fab1bfd4f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
@@ -27,6 +27,16 @@ $background-opacity: 0.7;
         }
     }
 }
+
+//set text color
+@function set-text-color($color){
+    @if (lightness($color)>40){
+        @return #000;
+    } @else{
+        @return #fff;
+    }
+}
+
 
 //media query Mixins
 

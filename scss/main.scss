@@ -10,7 +10,7 @@
 body{
     @include background;
     background-color: $main-color;
-    color: #fff;
+    color: set-text-color($main-color);
     height: 100%;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -34,7 +34,7 @@ h3{
     }
 }
 a{
-    color: #fff;
+    color: set-text-color($main-color);
     text-decoration: none;
 }
 
