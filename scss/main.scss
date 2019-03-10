@@ -108,6 +108,49 @@ main{
     border-bottom: $secondary-color 4px solid;
 }
 
+//work/projects
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.8rem;
+
+    img{
+        width: 100%;
+        border: 3px #fff solid;
+        &:hover{
+            opacity: 0.5;
+            border-color: $secondary-color;
+            @include easeout;
+        }
+    }
+}
+
+//button style
+
+.btn{
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+    &:hover {
+        background: $secondary-color;
+        color: set-text-color($secondary-color);
+        
+    }
+}
+
+.btn-light{
+    @extend .btn;
+    background: lighten($main-color, 40);
+    color: #333;
+}
+
+.btn-dark{
+    @extend .btn;
+    background: darken($main-color, 40);
+    color: #fff;
+}
+
 #main-footer{
     text-align: center;
     padding: 1rem;
